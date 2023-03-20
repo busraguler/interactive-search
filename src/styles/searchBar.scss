@@ -1,0 +1,12 @@
+@import "variable";
+
+.searchBar {
+  display: flex;
+  align-items: flex-end;
+  background-color: #443e5d;
+  padding: 10px;
+  svg {
+    color: $searchBarText;
+    margin-right: 10px;
+  }
+}

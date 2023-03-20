@@ -1,0 +1,16 @@
+@import "variable";
+
+.tableContainer {
+  border: 3px solid $tableBorder;
+  table {
+    background-color: $tableBackground;
+    tr:nth-child(even) {
+      background-color: $tableEvenBackground;
+    }
+    thead {
+      tr {
+        background-color: #443e5d;
+      }
+    }
+  }
+}

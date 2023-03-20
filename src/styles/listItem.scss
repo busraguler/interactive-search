@@ -1,0 +1,42 @@
+@mixin displayRow() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin font() {
+  color: $text;
+  font-size: 11px;
+}
+
+.policy {
+  @include displayRow();
+  margin-top: 20px;
+  p,
+  svg {
+    @include font();
+  }
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.contact {
+  @include displayRow();
+  flex-wrap: wrap;
+
+  p,
+  svg {
+    @include font();
+  }
+  p:nth-child(2) {
+    margin-right: 30px;
+  }
+  svg {
+    margin-right: 5px;
+  }
+}
+
+p,
+svg {
+  @include font();
+}
